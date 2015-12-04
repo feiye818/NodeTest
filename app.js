@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var HomePage = require('./public/components/HomePage.jsx');
 
 var app = express();
 
@@ -27,7 +28,8 @@ app.use('/users', users);
 
 app.get('/', function(req, res){
     console.log("app start...");
-    res.render('index', {title: 'Express'});
+    //res.render('index', {title: 'Rex'});
+    res.render('HomePage');
 })
 
 

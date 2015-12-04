@@ -3,3 +3,6 @@
  */
 
 var Router = require('react-router');
+var HomePage = require('./public/components/HomePage.jsx');
+
+
